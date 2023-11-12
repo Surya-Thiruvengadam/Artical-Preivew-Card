@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import drawer from "./images/drawers.jpg";
+import Profile from "./profile";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className="drawers-container">
+        <img src={drawer} alt="flower" id="flower" />
+      </section>
+      <section className="content">
+        <h4>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h4>
+
+        <small>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </small>
+        <Profile />
+      </section>
+    </main>
   );
 }
 
