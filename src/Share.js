@@ -19,9 +19,9 @@ function Share() {
       >
         <span>SHARE</span>
 
-        <a href="#"> <img src={facebook} alt="facebook" /> </a>
-        <a href="#"> <img src={twitter} alt="twitter" /> </a>
-       <a href="#"> <img src={printer} alt="printer" /> </a>
+       <img src={facebook} alt="facebook" /> 
+         <img src={twitter} alt="twitter" /> 
+        <img src={printer} alt="printer" /> 
       </div>
     </div>
   );

@@ -82,8 +82,6 @@ small {
   position: relative;
 }
 .share-image {
-  cursor: pointer;
-  border: none;
   text-align: center;
   width: fit-content;
   height: fit-content;
@@ -117,8 +115,13 @@ small {
   color: var(--LightGrayishBlue);
 }
 
-a{
-  text-decoration: none;
+.sharecon .logos img{
+  cursor: pointer;
+}
+
+button{
+  border: none;
+  cursor: pointer;
 }
 
 .sharecon .logos::after {
