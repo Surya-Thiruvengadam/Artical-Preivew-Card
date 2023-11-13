@@ -7,21 +7,21 @@ function Share() {
   const [state, setstate] = useState(false);
   return (
     <div className="sharecon">
-      <div
+      <button
         className="share-image"
         onClick={() => setstate(state ? false : true)}
       >
         <img src={shareicon} alt="shareicon" id="image1" />
-      </div>
+        </button>
       <div
         style={state ? { visibility: "visible" } : { visibility: "hidden" }}
         className="logos"
       >
         <span>SHARE</span>
 
-        <img src={facebook} alt="facebook" />
-        <img src={twitter} alt="twitter" />
-        <img src={printer} alt="printer" />
+        <a href="#"> <img src={facebook} alt="facebook" /> </a>
+        <a href="#"> <img src={twitter} alt="twitter" /> </a>
+       <a href="#"> <img src={printer} alt="printer" /> </a>
       </div>
     </div>
   );

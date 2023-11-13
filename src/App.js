@@ -4,9 +4,9 @@ import Profile from "./profile";
 function App() {
   return (
     <main>
-      <section className="drawers-container">
+      <div className="drawers-container">
         <img src={drawer} alt="flower" id="flower" />
-      </section>
+      </div>
       <section className="content">
         <h4>
           Shift the overall look and feel by adding these wonderful touches to

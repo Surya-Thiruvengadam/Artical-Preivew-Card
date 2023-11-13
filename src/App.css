@@ -20,13 +20,14 @@ main {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-flow: row;
-  margin: 15% auto;
+  margin: 16% auto;
   border-radius: 10px;
   font-size: 15px;
+  transform: scale(1.2);
 }
 
 .drawers-container {
-  width: 40%;
+  width: 38%;
 }
 #flower {
   width: 100%;
@@ -36,7 +37,7 @@ main {
 
 .content {
   padding: 8px 30px 10px;
-  width: 50%;
+  width: 52%;
   margin: auto;
 }
 
@@ -62,8 +63,9 @@ small {
 }
 
 .profilename {
+  font-size: 12px;
   flex-basis: 80%;
-  margin: 0px 15px 0px;
+  margin: 0px 18px 0px;
   line-height: 20px;
 }
 
@@ -80,6 +82,8 @@ small {
   position: relative;
 }
 .share-image {
+  cursor: pointer;
+  border: none;
   text-align: center;
   width: fit-content;
   height: fit-content;
@@ -90,7 +94,7 @@ small {
 }
 
 #image1 {
-  width: 120%;
+  width: 13px;
 }
 .sharecon .logos {
   width: 200px;
@@ -113,6 +117,10 @@ small {
   color: var(--LightGrayishBlue);
 }
 
+a{
+  text-decoration: none;
+}
+
 .sharecon .logos::after {
   content: "";
   border: 10px;
@@ -124,12 +132,12 @@ small {
   margin-left: -5px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   main {
-    width: 80vw;
-    flex-flow: column;
+    width: 84vw;
     position: relative;
     overflow: hidden;
+    transform: unset;
   }
 
   .drawers-container {
@@ -142,6 +150,7 @@ small {
 
   .sharecon {
     position: unset;
+    margin-top: 4px;
   }
 
   .share-image {
@@ -157,4 +166,10 @@ small {
     left: 0;
     display: block;
   }
+}
+
+@media screen  and (max-width:570px){
+       main{
+        flex-flow:column
+       }  
 }
